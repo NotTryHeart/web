@@ -1,0 +1,48 @@
+.section
+    &-title
+        font-size: 27px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        &::after
+            content: ''
+            display: block
+            margin-top: 10px
+            height: 6px
+            background: grey center no-repeat
+.button
+    font-size: 14px
+    font-weight: 500
+    color: $text-colour-light
+    border: 1px solid transparent
+    background-color: $active-colour
+    padding: 13px 22px
+    border-radius: 5px
+    transition: linear 0.2s
+    &:hover
+        background-color: lighten($active-colour, 5)
+        cursor: pointer
+    &-o
+        background-color: transparent
+        color: $text-colour-dark
+        border: 1px solid rgba(#373737,0.5) 
+        &:hover
+            background-color: lighten($active-colour, 5)
+            cursor: pointer
+            border: 1px solid transparent
+            color: $text-colour-light
+    img
+        vertical-align: middle
+    &_big
+        padding-top: 21.5px
+        padding-bottom: 21.5px 
+        vertical-align: middle
+@media  (max-width: 1020px)
+    .section
+        &-title
+            font-size: 27px
+            font-weight: 700
+            text-transform: uppercase
+            text-align: center
+            &::after
+                display: none

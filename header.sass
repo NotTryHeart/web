@@ -1,0 +1,41 @@
+$text-colour-dark: #373737
+$text-colour-light: #fff
+$active-colour: #fd9c28
+body
+    background-color: #fff
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+.header
+    background-color: #fff
+    padding: 15px 0px
+    &_logo
+        background: url('logo.png') center no-repeat
+        background-size: 100%
+        width: 191px
+        height: 61px
+        padding: 15px 0
+    &-contacts
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &_phone
+            &s
+                display: flex
+            font-size: 22px
+            font-weight: 500
+            margin-right: 13px
+            &:first-child
+                border-right: 1px solid #cfcfd0
+                padding-right: 13px
+        &_button
+            font-size: 14px
+            font-weight: 500
+            color: $text-colour-light
+            border: none
+            background-color: $active-colour
+            padding: 13px 22px
+            border-radius: 5px
+            transition: linear 0.2s
+            &:hover
+                background-color: lighten($active-colour,10%)
+                cursor: pointer
+            img
